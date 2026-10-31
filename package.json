@@ -1,0 +1,24 @@
+{
+  "name": "headless-model-tool",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A headless 3D asset inspection and screenshot tool for agents",
+  "scripts": {
+    "build": "vite build --config tools/model-tool/vite.config.mjs",
+    "typecheck": "tsc -p tools/model-tool/tsconfig.json --noEmit",
+    "model-tool": "node tools/model-tool/cli.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "0.186.0",
+    "electron": "45.2.1",
+    "typescript": "5.9.3",
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}
